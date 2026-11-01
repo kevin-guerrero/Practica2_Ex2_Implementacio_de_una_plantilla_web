@@ -1,15 +1,50 @@
-<main>
-  <section>
-    <img src="spider-man.png" alt="spider-man" />
+<main class="bg-gray-100 text-gray-900">
+  <section id="inicio" class="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 py-8 md:flex-row">
+    <img class="w-1/2 max-w-xs" src="spider-man.png" alt="Spider-Man" />
+    <article>
+      <h1 id="hero-title" class="text-3xl font-bold text-red-800">
+        Un gran poder conlleva una gran responsabilidad.
+      </h1>
+      <p class="my-4">
+        Descubre la historia, las películas y los videojuegos del amistoso vecino Spider-Man.
+      </p>
+      <button class="rounded bg-red-700 px-4 py-2 text-white hover:bg-red-800" type="button" (click)="btnInfo()">
+        Más información
+      </button>
+    </article>
   </section>
-  <section>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsum est provident
-      animi eveniet quibusdam magnam! Tempore culpa, vitae est facere nisi a. Voluptates dolore id,
-      quae aperiam sapiente iste? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Delectus, ipsum molestias excepturi illo suscipit blanditiis ratione quaerat veritatis dolore,
-      esse, nulla deleniti alias mollitia. Praesentium impedit eius tempora provident quas!
-    </p>
-    <button (click)="btnInfo()">Mes info</button>
+
+  <section id="historia" class="scroll-mt-4 border-t border-gray-300 py-8 md:flex md:min-h-96 md:items-center">
+    <article class="p-6 md:w-1/2 md:p-12">
+      <h2 id="historia-title" class="text-2xl font-bold text-red-800">Historia</h2>
+      <p class="mt-2">
+        Peter Parker era un estudiante de Nueva York hasta que la picadura de una araña radiactiva
+        le concedió habilidades extraordinarias. Inspirado por la pérdida de su tío Ben, decidió
+        usar sus poderes para proteger a los demás.
+      </p>
+    </article>
+    <img class="h-64 w-64 shrink-0 object-contain" src="peterParkerBittenBySpider.jpg" alt="PeterParkerComic" />
+  </section>
+
+  <section id="peliculas" class="scroll-mt-4 border-t border-gray-300 py-8 md:flex md:min-h-96 md:items-center">
+    <img class="h-64 w-64 shrink-0 object-contain" src="spidermanMovie.jpeg" alt="Póster Spider-Man" />
+    <article class="p-6 md:w-1/2 md:p-12">
+      <h2 id="peliculas-title" class="text-2xl font-bold text-red-800">Películas</h2>
+      <p class="mt-2">
+        Spider-Man ha protagonizado numerosas películas de acción real y animación. Sus aventuras
+        exploran cómo Peter Parker equilibra su vida cotidiana con la responsabilidad de ser un héroe.
+      </p>
+    </article>
+  </section>
+
+  <section id="juegos" class="scroll-mt-4 border-t border-gray-300 py-8 md:flex md:min-h-96 md:items-center">
+    <article class="p-6 md:w-1/2 md:p-12">
+      <h2 id="juegos-title" class="text-2xl font-bold text-red-800">Juegos</h2>
+      <p class="mt-2">
+        En sus videojuegos puedes recorrer Nueva York balanceándote entre edificios, enfrentarte
+        a villanos y vivir nuevas historias desde la perspectiva del trepamuros.
+      </p>
+    </article>
+    <img class="h-64 w-64 shrink-0 object-contain" src="spidermanGame.webp" alt="spider-man-videojuego" />
   </section>
 </main>
