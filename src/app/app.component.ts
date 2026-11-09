@@ -6,6 +6,7 @@ import { MainComponent } from './main/main.component';
 @Component({
   imports: [HeaderComponent, Footer, MainComponent],
   selector: 'app-root',
+  standalone: true,
   templateUrl: './app.component.html',
 })
 export class App {
