@@ -3,6 +3,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { HistoriaComponent } from './historia/historia.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
 import { JuegosComponent } from './juegos/juegos.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 export const routes: Routes = [
     {
@@ -21,5 +22,9 @@ export const routes: Routes = [
     {
         path: 'juegos',
         component: JuegosComponent
+    },
+    {
+        path: 'galeria',
+        component: GalleryComponent
     }
 ];
