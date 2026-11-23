@@ -1,1 +1,31 @@
-<p>gallery works!</p>
+<section class="min-h-screen bg-neutral-950 text-white pt-24 px-10">
+    <h1 class="text-5xl font-black uppercase mb-10">Galeria de imagenes</h1>
+
+    <figure>
+        <picture>
+           <source
+            type="image/avif"
+            srcset="
+                imagenes/the-amazing-spider-man-comic-400.avif 400w,
+                imagenes/the-amazing-spider-man-comic-800.avif 800w,
+                imagenes/the-amazing-spider-man-comic-1200.avif 1200w
+            "
+            sizes="(max-width: 700px) 100vw, 400px"
+           />
+           <img 
+            src="/imagenes/the-amazing-spider-man-comic-800.webp"
+            srcset="
+                imagenes/the-amazing-spider-man-comic-400.webp 400w,
+                imagenes/the-amazing-spider-man-comic-800.webp 800w,
+                imagenes/the-amazing-spider-man-comic-1200.webp 1200w,
+            "
+            sizes="(max-width: 700px) 100vw, 400px"
+            width="1200"
+            height="1800"
+            alt="Portada del Comic The Amazing Spider-Man #1000"
+           >
+        </picture>
+        <figcaption>Comic The Amazing Spider-man · AVIF/Webp</figcaption>
+    </figure>
+
+</section>
